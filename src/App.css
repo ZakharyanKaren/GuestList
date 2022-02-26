@@ -1,0 +1,48 @@
+.guestList-wrapper {
+  width: 1090px;
+  margin: 100px auto 0px;
+}
+
+.text-container h4 {
+  color: #162d3d;
+}
+
+.text-container p {
+  font-size: 16px;
+}
+
+.search_input {
+  width: 257px;
+  border: none;
+}
+
+.search_input:focus,
+.search_input:focus-visible,
+.search_input:active {
+  border: none !important;
+  outline: none !important;
+}
+
+#create-button {
+  background-color: #3899ec;
+  border-radius: 50px;
+  padding: 5px 44px;
+}
+
+.searchbarContainer {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+::placeholder {
+  opacity: 0.5; /* Firefox */
+}
+
+p {
+  margin: 0px !important;
+}
+
+#guestListTable tr td {
+  vertical-align: middle;
+}
