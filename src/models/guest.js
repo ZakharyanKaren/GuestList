@@ -27,11 +27,33 @@ export const defaultGuestsList = [
     Math.random().toString(16).slice(2),
     "Savannah Nyugen",
     "Jazz concert",
-    "wdjwadn@gmail.com",
+    "felicia.reid@example.com",
     1,
+    1,
+    "+3755000000",
+    "Arshakunyats Ave. 5",
+    "Something about event's comment"
+  ),
+  new GuestModel(
+    Math.random().toString(16).slice(2),
+    "Savannah Nyugen",
+    "Jazz concert",
+    "felicia.reid@example.com",
     2,
-    "+37412345678",
-    "Arshakunyats ave.5",
-    "lorem ipsum dolor sit amet"
+    2,
+    "+3755000000",
+    "Arshakunyats Ave. 5",
+    "Something about event's comment"
+  ),
+  new GuestModel(
+    Math.random().toString(16).slice(2),
+    "Savannah Nyugen",
+    "Jazz concert",
+    "felicia.reid@example.com",
+    1,
+    3,
+    "+3755000000",
+    "Arshakunyats Ave. 5",
+    "Something about event's comment"
   ),
 ];

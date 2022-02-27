@@ -1,6 +1,12 @@
 .guestList-wrapper {
   width: 1090px;
   margin: 100px auto 0px;
+  padding: 30px;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.header-text p {
+  color: #32536a;
 }
 
 .text-container h4 {
@@ -30,7 +36,7 @@
 }
 
 .searchbarContainer {
-  border: 1px solid black;
+  border: 1px solid #b1deff;
   border-radius: 50px;
   padding: 5px;
 }

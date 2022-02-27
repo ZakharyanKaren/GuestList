@@ -47,43 +47,45 @@ const App = () => {
   return (
     <main className="guestList-wrapper mx-auto mt-5">
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-6">
-            <div className="text-container">
-              <h4 color="#162D3D">Guest list</h4>
+        <div className="d-flex justify-content-between">
+          <div>
+            <div className="header-text text-container">
+              <h4>Guest List</h4>
               <p>Watch and manage your guest list</p>
             </div>
           </div>
-          <div className="col-4 text-end">
-            <Form className="search_form d-inline-block">
-              <div className="searchbarContainer d-inline-block">
-                <label
-                  id="search-icon"
-                  htmlFor="searchInput"
-                  className="d-inline"
-                >
-                  <FontAwesomeIcon icon={faSearch} />
-                </label>
-                <input
-                  value={searchValue}
-                  onChange={handleSearchChange}
-                  type="text"
-                  placeholder="Search"
-                  className="search_input"
-                  aria-label="Search"
-                  id="searchInput"
-                />
-              </div>
-            </Form>
-          </div>
-          <div className="col-2 text-center">
-            <CreateGuestModal
-              handleCreateFormSubmit={createGuest}
-              id="create-button"
-              className="w-75"
-            >
-              Add
-            </CreateGuestModal>
+          <div className="d-flex">
+            <div className="px-3">
+              <Form className="search_form">
+                <div className="searchbarContainer px-2">
+                  <label
+                    id="search-icon"
+                    htmlFor="searchInput"
+                    className="d-inline"
+                  >
+                    <FontAwesomeIcon icon={faSearch} color="#B1DEFF" />
+                  </label>
+                  <input
+                    value={searchValue}
+                    onChange={handleSearchChange}
+                    type="text"
+                    placeholder="Search"
+                    className="search_input px-2"
+                    aria-label="Search"
+                    id="searchInput"
+                  />
+                </div>
+              </Form>
+            </div>
+            <div className="text-center">
+              <CreateGuestModal
+                handleCreateFormSubmit={createGuest}
+                id="create-button"
+                className="w-75"
+              >
+                Add
+              </CreateGuestModal>
+            </div>
           </div>
         </div>
       </div>
@@ -96,7 +98,8 @@ const App = () => {
             <th>Mail</th>
             <th>Ticket type</th>
             <th>Status</th>
-            <th>Actions</th>
+            <th className="text-center">Actions</th>
+            <th />
           </tr>
         </thead>
         <tbody>

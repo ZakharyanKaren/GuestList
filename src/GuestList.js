@@ -1,7 +1,10 @@
 import { useState } from "react";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDown, faAngleUp } from "@fortawesome/fontawesome-free-solid";
+import {
+  faTrashCan,
+  faAngleDown,
+  faAngleUp,
+} from "@fortawesome/free-solid-svg-icons";
 
 const GuestList = ({ guests, handleRemoveGuest }) => {
   return guests.map((guest) => (
@@ -47,14 +50,14 @@ const Guest = ({ guest, handleRemoveGuest }) => {
   if (isOpen) {
     actions = (
       <div>
-        <FontAwesomeIcon icon="fa-solid fa-angle-up" />
+        <FontAwesomeIcon icon={faAngleUp} />
         <p>See less </p>
       </div>
     );
   } else {
     actions = (
       <div>
-        <FontAwesomeIcon icon="fa-solid fa-angle-down" />
+        <FontAwesomeIcon icon={faAngleDown} />
         <p>See more</p>
       </div>
     );
